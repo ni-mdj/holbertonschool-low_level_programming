@@ -1,20 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - Entry point of the program
  *
- * Description: Prints a quote using the puts function
+ * Prints the alphabet in lowercase using the putchar function
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
+	char alphabet = 'a';
 
-	for (char alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-	putchar(alphabet);
-}
-	putchar('\n');
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
 
-return (0);
+		alphabet++;
+	}
+	putchar('\n')
+
+	return (0);
 }
