@@ -18,8 +18,8 @@ while (s[i] != '\0')
 {
 i++;
 }
-for (j = i; j >= 0; j--)
+for (j = i; j > 0; j--)
 {
-_putchar(s[i]);
+_putchar(s[j]);
 }
 }
