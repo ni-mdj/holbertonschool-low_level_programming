@@ -8,7 +8,7 @@
  * Return: the integer value of the converted str
  */
 
-int _atoi(char *s)	
+int _atoi(char *s)
 {
 int sign = 1;
 unsigned int num = 0;
@@ -28,5 +28,5 @@ break;
 s++;
 }
 
-return (sign * num);
+return result *sign;
 }
