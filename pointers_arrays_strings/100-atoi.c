@@ -1,5 +1,5 @@
 #include "main.h"
-#includen <stdio.h>
+#include <stdio.h>
 
 /**
  * _atoi - converts a string to an integer
@@ -24,7 +24,7 @@ j = 1;
 k = k * 10 + (*s - '0');
 }
 else if (j)
-do while;
+
 s++;
 }
 
