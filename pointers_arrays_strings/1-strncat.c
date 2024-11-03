@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
- * _strncat - Concatenates two strings up to n bytes
+ * _strncpy  - Concatenates two strings up to n bytes
  * @dest: The destination string
  * @src: The source string
  * @n: Maximum number of bytes to use from src

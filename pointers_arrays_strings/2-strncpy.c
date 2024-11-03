@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
- * _strncpy - Copies a string
+ * _strncpy - Copies a string 
  * @dest: The destination string
  * @src: The source string
  * @n: The maximum number of bytes to copy
