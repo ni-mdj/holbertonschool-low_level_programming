@@ -6,7 +6,7 @@
  * @dest: pointer to the destination buffer
  * @src: pointer to the source string
  *
- * Return: Pointer to doest
+ * Return: Pointer to dest
  */
 
 char *_strcpy(char *dest, char *src)
