@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 int i = 1;
-int k = 0;
+unsigned int k = 0;
 int j = 0;
 
 while (*s)
@@ -24,9 +24,9 @@ j = 1;
 k = k * 10 + (*s - '0');
 }
 else if (j)
-
+break;
 s++;
 }
 
-retun (i *  k);
+retun (i * k);
 }
