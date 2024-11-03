@@ -5,7 +5,7 @@
  * _atoi - converts a string to an integer
  * @s: the string to convert
  *
- * Return: the integer value of the converted str
+ * Return: the integer value of the converted string
  */
 
 int _atoi(char *s)
@@ -28,5 +28,5 @@ break;
 s++;
 }
 
-return result *sign;
+return (sign * num);
 }
