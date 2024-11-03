@@ -10,7 +10,7 @@
  * return: pointeur vers la chaine resultante dest
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 
 int dest_i = 0;
