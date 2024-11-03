@@ -6,7 +6,7 @@
  * @dest: the destination string
  * @src: the source string to be appended
  *
- * return: a pointer to the resut string dest
+ * Return: a pointer to the resulting string dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -22,7 +22,7 @@ j++;
 while (src[i] != '\0')
 {
 dest[j + i] = src[i];
-i++
+i++;
 }
 dest[j + i] = '\0';
 return (dest);
