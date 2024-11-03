@@ -28,5 +28,5 @@ else if (j)
 s++;
 }
 
-retun (i * k);
+retun (i *  k);
 }
