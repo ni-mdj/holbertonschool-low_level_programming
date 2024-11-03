@@ -23,10 +23,11 @@ else if (*s >= '0' && *s <= '9')
 j = 1;
 k = k * 10 + (*s - '0');
 }
-else if (j);
+else if (j)
+{
 break;
 s++;
 }
 
-retun (i);
+return (i);
 }
