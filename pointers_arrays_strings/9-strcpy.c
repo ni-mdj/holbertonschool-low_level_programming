@@ -6,20 +6,20 @@
  * @dest: pointer to the destination buffer
  * @src: pointer to the source string
  *
- * return: to dest pointer
+ * Return: Pointer to doest
  */
 
 char *_strcpy(char *dest, char *src)
 {
 int i = 0;
 
-while (src[i] != '\0')
+while (src[i] != '\0'
 {
 dest[i] = src[i];
 i++;
 }
 
-dest[i] = '\0' ;
+dest[i] = '\0';
 
 return (dest);
 }
