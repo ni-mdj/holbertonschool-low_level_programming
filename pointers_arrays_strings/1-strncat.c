@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * _strncat - concatene n caractÃres
+ * _strncat - concatÃne ¨ncaractÃ¨res de srcÃ  des
  * @dest: string destination
  * @src: string source
- * @n: numbers max caracters
+ * @n: le nombre maximum de caractÃres 
  *
- * return: pointeur vers la chaine resultante dest
+ * return: un pointeur vers la chaÃne resultante dest
  */
 
 char *_strncat(char *dest, char *src, int n)
