@@ -16,7 +16,7 @@ while (str[i] != '\0')
 i++;
 }
 
-j = (i % 2 == 0) ? i / 2 : (i
+j = (i % 2 == 0) ? (i / 2) : (i / 2 + 1);
 while (str[j] != '\0')
 {
 _putchar(str[j]);
