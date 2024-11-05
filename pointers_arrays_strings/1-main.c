@@ -44,3 +44,4 @@ _memcpy(buffer + 50, buffer2, 10);
 printf("-------------------------------------------------\n");
 simple_print_buffer(buffer, 98);
 return (0);
+}
