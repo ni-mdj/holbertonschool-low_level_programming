@@ -19,7 +19,7 @@ if (size == 0)
 {
 return (0);
 }
-*i = malloc(size * sizeof(char));
+i = malloc(size * sizeof(char));
 if (i == 0)
 {
 return (0);
@@ -28,6 +28,5 @@ for (j = 0; j < size; j++)
 {
 i[j] = c;
 }
-return (c);
-free(i);
+return (i);
 }
