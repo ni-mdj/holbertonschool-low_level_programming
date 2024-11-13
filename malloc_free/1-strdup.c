@@ -21,6 +21,8 @@ return (NULL);
 }
 
 for (k = 0; str[k] != '\0'; k++)
+{
+}
 i = (char *)malloc(sizeof(char) * (k + 1));
 
 if (i == NULL)
