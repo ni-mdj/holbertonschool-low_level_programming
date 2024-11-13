@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
  * str_concat - function that concatenates two strings
- * @
- * @str: the string to duplicate.
+ * @s1: the first string
+ * @s2: the second string
  *
- * Return: pointer to the duplicated string on success,
- *         NULL if str is NULL or if memory allocation fails.
+ * Return: pointer to the concatenated string on success,
+ *         NULL if memory allocation fails.
  */
-
+ 
  char *str_concat(char *s1, char *s2)
 {
 char *s;
