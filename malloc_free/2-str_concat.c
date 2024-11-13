@@ -10,8 +10,7 @@
  * Return: pointer to the concatenated string on success,
  *         NULL if memory allocation fails.
  */
- 
- char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 char *s;
 unsigned int len1 = 0, len2 = 0, pizza, pasta;
@@ -23,7 +22,7 @@ while(s1[len1])
 len1++;
 while(s2[len2])
 len2++;
-s = (char *)malloc(sizeof(char) * len1 + len2 + 1);
+s = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 if(s == NULL)
 return (NULL);
 for(pizza = 0; pizza < len1; pizza++)
