@@ -12,21 +12,29 @@
 
 int **alloc_grid(int width, int height)
 {
-int **grid;
-int pizza, int pasta;
-if (width <= 0 || height <= 0)
-return (NULL);
-grid = malloc(sizeof(int *) * height);
-if (grid == NULL)
-return (NULL);
-for (pizza = 0; pizza < height; pizza++)
-grid[pizza] = malloc(sizeof(int) * width);
-if (grid[pizza] == NULL)
-for (pasta = 0; pasta < pizza; pasta++)
-free(grid[pasta]);
-free(grid);
-return (NULL);
-for (pasta = 0; pasta < width; pasta++)
-grid[pizza][pasta] = 0;
-return (grid);
+    int **grid;
+    int i, j;
+
+    if (width <= 0 || height <= 0)
+        return (NULL);
+
+    grid = malloc(sizeof(int *) * height);
+    if (grid == NULL)
+        return (NULL);
+
+    for (i = 0; i < height; i++)
+    {
+        grid[i] = malloc(sizeof(int) * width);
+        if (grid[i] == NULL)
+        {
+            for (j = 0; j < i; j++)
+                free(grid[j]);
+            free(grid);
+            return (NULL);
+        }
+        for (j = 0; j < width; j++)
+            grid[i][j] = 0;
+    }
+
+    return (grid);
 }
