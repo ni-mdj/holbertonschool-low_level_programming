@@ -3,7 +3,7 @@
 
 
 /**
- * str_concat - function that concatenates two strings
+ * alloc_grid - function that allocates a 2D array of integers
  * @width: width of the 2d array
  * @height: height of the 2d array
  *
