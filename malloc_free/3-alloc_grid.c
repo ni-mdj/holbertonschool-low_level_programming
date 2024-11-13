@@ -16,7 +16,7 @@ int **grid;
 int pizza;
 int pasta;
 
-if (width <= 0 ,height <= 0)
+if (width <= 0 height, <= 0)
 return (NULL);
 grid = malloc(sizeof(int *) * height);
 if (grid == NULL)
@@ -28,7 +28,7 @@ for (pasta = 0; pasta < pizza; pasta++)
 free(grid[pasta]);
 free(grid);
 return (NULL);
-for (pasta = 0; j < width; pasta++)
+for (pasta = 0; pasta < width; pasta++)
 grid[pizza][pasta] = 0;
 return (grid);
 }
