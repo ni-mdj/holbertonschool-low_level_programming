@@ -21,7 +21,7 @@ grid = malloc(sizeof(int *) * height);
 if (grid == NULL)
 return (NULL);
 for (pizza = 0; pizza < height; pizza++)
-grid[pizza] = malloc(sizeof(int *) * width);
+grid[pizza] = malloc(sizeof(int) * width);
 if (grid[pizza] == NULL)
 for (pasta = 0; pasta < pizza; pasta++)
 free(grid[pasta]);
