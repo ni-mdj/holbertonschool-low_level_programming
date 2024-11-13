@@ -6,7 +6,7 @@
  *           which contains a copy of the string given as a parameter.
  * @str: the string to duplicate.
  *
- * Return: pointer to the duplicated string on success, 
+ * Return: pointer to the duplicated string on success,
  *         NULL if str is NULL or if memory allocation fails.
  */
 
@@ -21,6 +21,8 @@ return (NULL);
 }
 
 for (k = 0; str[k] != '\0'; k++)
+{
+}
 i = (char *)malloc(sizeof(char) * (k + 1));
 
 if (i == NULL)
