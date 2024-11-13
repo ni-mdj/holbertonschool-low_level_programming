@@ -25,9 +25,9 @@ len2++;
 s = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
 if(s == NULL)
 return (NULL);
-for(pizza = 0; pizza < len1; pizza++)
+for (pizza = 0; pizza < len1; pizza++)
 s[pizza] = s1[pizza];
-for(pasta = 0; pasta < len2; pasta++, pizza++)
+for (pasta = 0; pasta < len2; pasta++, pizza++)
 s[pizza] = s2[pasta];
 s[pizza] = '\0';
 return (s);
