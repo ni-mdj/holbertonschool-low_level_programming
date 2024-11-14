@@ -14,6 +14,7 @@ char *str_concat(char *s1, char *s2)
 {
 char *s;
 unsigned int len1 = 0, len2 = 0, pizza, pasta;
+
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
