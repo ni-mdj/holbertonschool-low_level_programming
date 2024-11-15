@@ -2,6 +2,15 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ * string_nconcat - Concatenates two strings
+ * @s1: First string
+ * @s2: Second string
+ * @n: Number of bytes from s2 to concatenate
+ *
+ * Return: Pointer to newly allocated space in memory, or NULL if it fails
+ * */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *pizza;
@@ -30,3 +39,4 @@ pizza[i] = s2[j];
 pizza[i] = '\0';
 return (pizza);
 }
+
