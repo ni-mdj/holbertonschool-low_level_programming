@@ -5,20 +5,21 @@
  * print_dog - write a function that prints a struct dog
  * @d: pointers to the struct dog
  *
- * Description : If an element of d is NULL, print (nil) instead of this element
+ * Description : If an element of d is NULL, print (nil)
  */
 void print_dog(struct dog *d)
 {
 if (d == NULL)
 return;
 
-if (d ->name == NULL)
+if (d->name == NULL)
 printf("name: (nil)\n");
 
-else 
+else
+
 printf("name: %s\n", d->name);
 
-printf("age: %f\n" , d->age);
+printf("age: %f\n", d->age);
 
 if (d->owner == NULL)
 
@@ -26,6 +27,6 @@ printf("owner: (nil)\n");
 
 else
 
-printf("owner: %s\n" , d->owner);
+printf("owner: %s\n", d->owner);
 }
 
