@@ -1,42 +1,44 @@
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
 
 /**
  * string_nconcat - Concatenates two strings
- * @s1: First string
- * @s2: Second string
+ * @s1: The first string
+ * @s2: The second string
  * @n: Number of bytes from s2 to concatenate
  *
- * Return: Pointer to newly allocated space in memory, or NULL if it fails
- **/
-
+ * Return: Pointer to newly allocated space in memory containing the result,
+ *         or NULL if the function fails
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *pizza;
-int len1;
-int len2;
-int i;
-int j;
+char *result;
+unsigned int len1, len2, i, j;
 
-len 1 = 0;
-len 2 = 0;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-len1 = strlen(s1);
-len2 = strlen(s2);
+
+for (len1 = 0; s1[len1]; len1++)
+;
+for (len2 = 0; s2[len2]; len2++)
+;
 if (n >= len2)
 n = len2;
-pizza = malloc(sizeof(char) * (len1 + n + 1));
-if (pizza == NULL)
+
+result = malloc(sizeof(char) * (len1 + n + 1));
+if (result == NULL)
 return (NULL);
+
 for (i = 0; i < len1; i++)
-pizza[i] = s1[i];
+result[i] = s1[i];
+
 for (j = 0; j < n; j++, i++)
-pizza[i] = s2[j];
-pizza[i] = '\0';
-return (pizza);
+result[i] = s2[j];
+
+result[i] = '\0';
+
+return (result);
 }
 
