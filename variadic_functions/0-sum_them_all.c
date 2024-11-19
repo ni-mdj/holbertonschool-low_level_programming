@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
 * sum_them_all - multiply numbers
 * @n: variable for the first number
@@ -14,6 +14,8 @@ va_list rayane;
 unsigned int i;
 int sum;
 
+sum = 0;
+
 if (n == 0)
 {
 return (0);
@@ -21,7 +23,7 @@ return (0);
 va_start(rayane, n);
 for (i = 0 ; i  < n; i++)
 {
-sum + = va_arg(rayane, int);
+sum += va_arg(rayane, int);
 }
 va_end(rayane);
 return (sum);
