@@ -10,7 +10,7 @@
 
 int is_98(int elem)
 {
-return (98 == elem);
+	return (98 == elem);
 }
 
 /**
@@ -43,7 +43,7 @@ int abs_is_98(int elem)
 */
 int main(void)
 {
-int array[20] = {0, -98, 98, 402, 1024, 4096, -1024, -98, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 98};
+int array[20] = {0, -98, 98, 402, 1024, 4096, -1024, -7, 811, 98};
 
 int index;
 
