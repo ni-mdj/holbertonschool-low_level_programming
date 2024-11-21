@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <starg.h>
+#include <stdarg.h>
 
 /**
 * print_all - prints anything
@@ -28,10 +28,10 @@ switch (format[i])
 case 'c':
 printf("%s%c", separator, va_arg(args, int));
 break;
-case 'i';
-printf("%s%f", separator, va_arg(args, int));
+case 'i':
+printf("%s%d", separator, va_arg(args, int));
 break;
-case 'f';
+case 'f':
 printf("%s%f", separator, va_arg(args, double));
 break;
 case 's':
@@ -40,7 +40,7 @@ if (!str)
 str = "(nil)";
 printf("%s%s", separator, str);
 break;
-default;
+default:
 i++;
 continue;
 }
